@@ -11,9 +11,9 @@ namespace BowlingGame.Application
             var scorer = new TraditionalScoreStrategy();
             var rollProvider = new ManualRollProvider();
             var game = new Game.BowlingGame(scorer, rollProvider);
-            var displayer = new BowlingScorePresenter();
+            var presenter = new BowlingScorePresenter();
             
-            displayer.DisplayGame(game.GetFrames());
+            presenter.DisplayGame(game.GetFrames());
             while (!game.IsGameCompleted())
             { 
                 game.RollBowlingBall(); 
