@@ -18,3 +18,26 @@ Simillarly is this done for the `RollProvider` interface used by the BowlingGame
 
 The benifits of adhering to the clean architecture is low coupling and inwards dependency. This core should easily plugged into different UI frameworks where a simple one is made for demonstration purpuses but I believed the BowlingGame would easily wrapped and
 deliver scores through a web api as an dependency to appropriate controller.
+
+## Bowling.Application
+
+This contains a client application of BowlingGame project in this case a console application, it's plugged into Bowling game as an outer layer.
+In this application a BowlingGame instiation with a default Traditional Scoring Strategy and a MaualRollProvider object which lets BowlingGame class take in roll via the console,
+
+The also uses a Presenter class to display the series of frames after each roll.
+This implementation hasn't been ny main focus.
+
+## BowlingGame.Test
+
+An inital set of tests are contained in this project which also sits in the perifery of the BowlingGame. I have tried following the principle of red-green-refactor doing some initial testing of the Frame entity and then testing the integration of BowlingGame class from the 3 examples given in the challenge documentation.
+
+More is necessary they would be my focus should I work on this further.
+
+NSubsitute is installed as a dependency for this project.
+
+## Adding a UI and further improvements
+
+Next steps for development could be a more robust and developed UI. This could either be either a web or desktop application. A web application with a RESTful api would probably be the preferred choice.
+My next thoughts would probably be on creation patterns encaplsulate the instanciation for some of the classes e.g. the builder pattern build the BowlingGame object with specified strategies for scoring and genersting rolls.
+
+New features to focus on would also be support for mutiple players and data persistence.
