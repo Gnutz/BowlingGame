@@ -17,7 +17,7 @@ namespace BowlingGame.Application
             while (!game.IsGameCompleted())
             { 
                 game.RollBowlingBall(); 
-                displayer.DisplayGame(game.GetFrames());
+                presenter.DisplayGame(game.GetFrames());
             }
 
         }
