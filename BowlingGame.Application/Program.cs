@@ -10,7 +10,7 @@ namespace BowlingGame.Application
         {
             var scorer = new TraditionalScoreStrategy();
             var rollProvider = new ManualRollProvider();
-            var game = new Game.BowlingGame(rollProvider:rollProvider);
+            var game = new Game.BowlingGame(scorer, rollProvider);
             var displayer = new BowlingScorePresenter();
             
             displayer.DisplayGame(game.GetFrames());
