@@ -38,6 +38,6 @@ NSubsitute is installed as a dependency for this project.
 ## Adding a UI and further improvements
 
 Next steps for development could be a more robust and developed UI. This could either be either a web or desktop application. A web application with a RESTful api would probably be the preferred choice.
-My next thoughts would probably be on creation patterns encaplsulate the instanciation for some of the classes e.g. the builder pattern build the BowlingGame object with specified strategies for scoring and genersting rolls.
+My next thoughts would probably be on creation patterns encaplsulate the instanciation for some of the classes e.g. the builder pattern build the BowlingGame object with specified strategies for scoring and generating rolls.
 
 New features to focus on would also be support for mutiple players and data persistence.
