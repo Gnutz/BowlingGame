@@ -1,4 +1,4 @@
-﻿# Bowling AppID principles and Clean architecture
+﻿# BowlingGame - Solid principles and Clean architecture
 
 Generally I have tried to adhere to the SOLID principles and write code that is easy 
 to read and maintainable.
